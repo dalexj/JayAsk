@@ -1,5 +1,3 @@
 (function() {
-  window.$ = function(a) {
-    return document.querySelectorAll(a);
-  };
+  window.$ = document.querySelectorAll.bind(document);
 })();
